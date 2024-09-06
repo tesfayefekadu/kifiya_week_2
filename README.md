@@ -1,0 +1,3 @@
+                                  Telecommunications Data Analysis
+Overview
+This project involves the analysis of telecommunications data, focusing on user behavior, engagement, and experience using exploratory data analysis (EDA) techniques. The analysis includes tasks such as aggregating user data, handling missing values, computing dispersion parameters, and conducting various forms of analysis including univariate, bivariate, correlation, and dimensionality reduction.
