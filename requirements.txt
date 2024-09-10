@@ -1,0 +1,11 @@
+import sys
+import os
+import pandas as pd
+from tabulate import tabulate
+import psycopg2
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
