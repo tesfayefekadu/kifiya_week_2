@@ -13,6 +13,16 @@ def load_data(db_params, query):
         host=db_params['host'],
         port=db_params['port']
     )
+    DB_PARAMS = {
+    'dbname': 'telecom',
+    'user': 'postgres',
+    'password': 'admin',
+    'host': 'localhost',
+    'port': '5432'
+}
+
+# SQL query to execute
+    query = "SELECT * FROM xdr_data;"
     df = pd.read_sql_query(query, connection)
     connection.close()
     return df
@@ -21,7 +31,7 @@ def create_table(db_params, create_table_query):
     """
     Create a table in the PostgreSQL database.
     """
-    connection = psycopg2.connect(
+    connection = psycopg2.connect (
         dbname=db_params['dbname'],
         user=db_params['user'],
         password=db_params['password'],
